@@ -1,0 +1,21 @@
+<?php
+
+$basePath = dirname(__DIR__);
+
+return [
+    'driver' => env('SESSION_DRIVER', 'file'),
+    'lifetime' => env('SESSION_LIFETIME', 120),
+    'expire_on_close' => false,
+    'encrypt' => false,
+    'files' => $basePath . '/storage/framework/sessions',
+    'connection' => null,
+    'table' => 'sessions',
+    'store' => null,
+    'lottery' => [2, 100],
+    'cookie' => env('SESSION_COOKIE', 'laravel_session'),
+    'path' => '/',
+    'domain' => env('SESSION_DOMAIN'),
+    'secure' => env('SESSION_SECURE_COOKIE'),
+    'http_only' => true,
+    'same_site' => 'lax',
+];
