@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::4BeVCDDA3gNuoy63',
+            '_route' => 'generated::OuJFEjTipXVP48m5',
           ),
           1 => NULL,
           2 => 
@@ -215,6 +215,26 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/verify' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'verify.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/login' => 
       array (
         0 => 
@@ -238,7 +258,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::v3agFVViBmiA3gdo',
+            '_route' => 'generated::zsucMOcW7G5qYmwH',
           ),
           1 => NULL,
           2 => 
@@ -351,7 +371,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::NONfTOSABk60KtLW',
+            '_route' => 'generated::ALahniAF9CmGHV4G',
           ),
           1 => NULL,
           2 => 
@@ -491,7 +511,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::4BeVCDDA3gNuoy63' => 
+    'generated::OuJFEjTipXVP48m5' => 
     array (
       'methods' => 
       array (
@@ -527,8 +547,8 @@ app('router')->setCompiledRoutes(
                     return response(\\Illuminate\\Support\\Facades\\View::file(\'D:\\\\Laravel\\\\everify\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\', [
                         \'exception\' => $exception,
                     ]), status: $status);
-                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000004ef0000000000000000";}}',
-        'as' => 'generated::4BeVCDDA3gNuoy63',
+                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"000000000000051d0000000000000000";}}',
+        'as' => 'generated::OuJFEjTipXVP48m5',
       ),
       'fallback' => false,
       'defaults' => 
@@ -970,6 +990,43 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'verify.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'verify',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\DocumentVerificationController@index',
+        'controller' => 'App\\Http\\Controllers\\DocumentVerificationController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'verify.index',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'login' => 
     array (
       'methods' => 
@@ -1008,7 +1065,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::v3agFVViBmiA3gdo' => 
+    'generated::zsucMOcW7G5qYmwH' => 
     array (
       'methods' => 
       array (
@@ -1029,7 +1086,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::v3agFVViBmiA3gdo',
+        'as' => 'generated::zsucMOcW7G5qYmwH',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1311,7 +1368,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::NONfTOSABk60KtLW' => 
+    'generated::ALahniAF9CmGHV4G' => 
     array (
       'methods' => 
       array (
@@ -1332,7 +1389,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::NONfTOSABk60KtLW',
+        'as' => 'generated::ALahniAF9CmGHV4G',
       ),
       'fallback' => false,
       'defaults' => 

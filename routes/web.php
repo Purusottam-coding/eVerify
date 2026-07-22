@@ -46,5 +46,7 @@ Route::middleware(['auth', 'verified', 'role:admin'])->prefix('admin')->group(fu
 Route::middleware(['auth', 'verified', 'role:staff'])->prefix('staff')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'staff'])->name('staff.dashboard');
 });
+use App\Http\Controllers\DocumentVerificationController;
 
+Route::get('/verify', [DocumentVerificationController::class, 'index'])->name('verify.index');
 require __DIR__.'/auth.php';

@@ -52,6 +52,13 @@
         <div class="auth-links text-center">
             <?php if(Route::has('password.request')): ?>
                 <a href="<?php echo e(route('password.request')); ?>">पासवर्ड बिर्सनुभयो?</a>
+                
+            <div class="mt-2">
+                <a href="<?php echo e(route('verify.index')); ?>">
+                    कागजात प्रमाणीकरण यहाँ जाँच्नुहोस्
+                </a>
+            </div>
+        </div>
             <?php endif; ?>
         </div>
     </form>
